@@ -1,0 +1,27 @@
+{
+  "name": "expresstypescript",
+  "description": "Develop and ExpressJS webserver using TypeScript",
+  "main": "build/start.js",
+  "scripts": {
+    "start-dev": "nodemon --config \"./util/nodemon.json\"/",
+    "build": "rm -rf ./build && tsc",
+    "start": "node build/start.js"
+  },
+  "dependencies": {
+    "@overnightjs/core": "^1.6.4",
+    "@overnightjs/logger": "^1.1.4",
+    "@types/express-session": "^1.17.4",
+    "@types/fs-extra": "^9.0.12",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "@types/node": "^11.13.4",
+    "nodemon": "^1.18.11",
+    "ts-node": "^8.1.0",
+    "tslint": "^5.15.0",
+    "typescript": "^3.4.3"
+  }
+}
